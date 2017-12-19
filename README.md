@@ -4,7 +4,7 @@
 
 # PLEASE CHECK BACK AFTER 3 AM on December 19, PST
 
-### I am responding to a review and had to "submit" in the classroom website since midnight is the deadline for submission. My pipeline is running and should be done by 2 AM.
+### I am responding to a review and had to "submit" in the classroom website since midnight is the deadline for submission. My pipeline is running and should be done by 3 AM.
 
 Thanks !
 
