@@ -1,0 +1,1 @@
+{"test_accuracy": 0.9893, "hog_feat": true, "version": 8, "cell_per_block": 2, "spatial_size": [16, 16], "color_space": "HLS", "hog_channel": "ALL", "orient": 9, "spatial_feat": true, "pix_per_cell": 8, "hist_feat": true, "hist_bins": 16}
