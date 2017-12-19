@@ -100,15 +100,19 @@ I use the `find_cars` function in `feature_extraction.py` to extract features to
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Raw image ...
+
 <img src="img/raw_img.png" width="480" />
 
 After sliding window search ...
+
 <img src="img/sliding.png" width="480" />
 
 Applying a thresholded heatmap ...
+
 <img src="img/heatmap.png" width="480" />
 
 And finally, the bounding box !
+
 <img src="img/bbox.png" width="480" />
 
 ### Video Implementation
