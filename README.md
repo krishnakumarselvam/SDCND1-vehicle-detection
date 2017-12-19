@@ -4,6 +4,7 @@
 The Project
 
 [Video output](https://youtu.be/EtS9RD13cXU)
+
 ---
 
 The goals / steps of this project are the following:

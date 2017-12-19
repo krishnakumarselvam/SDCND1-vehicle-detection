@@ -60,7 +60,8 @@ static_options = {
     'spatial_feat': True,
     'pix_per_cell': 8, 
     'cell_per_block': 2}
-    ```
+    
+ ```
 
 I eventually settled with 
 ```
