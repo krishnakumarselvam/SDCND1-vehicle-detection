@@ -11,7 +11,7 @@ Thanks !
 
 The Project
 
-[Video output]()
+[Video output](https://youtu.be/TNrvdw3tdho)
 
 ---
 
@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 Files submitted
 --
 * [write_up.md](write_up.md)
-* [Video output]()
+* [Video output]( https://youtu.be/TNrvdw3tdho)
 * [part_0_augment_dataset.ipynb](part_0_augment_dataset.ipynb)
 * [part_1_building_the_classifier.ipynb](part_1_building_the_classifier.ipynb)
 * [part_2_video_processing.ipynb](part_2_video_processing.ipynb)
