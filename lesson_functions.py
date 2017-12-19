@@ -277,7 +277,21 @@ def apply_threshold(heatmap, threshold):
     # Return thresholded map
     return heatmap
 
-def draw_labeled_bboxes(img, labels):
+def is_range_overlapping(r1, r2):
+    min_r2 = min(r2)
+    max_r2 = max(r2)
+    if (r1[0] >= min_r2 and r1[0] <= max_r2) or (r1[1] >= min_r2 and r1[1] <= max_r2):
+        return True
+    return False
+        
+def are_boxes_overlapping(box1, box2):
+    ax1_overlap = is_range_overlapping([box1[0][0], box1[1][0]],  [box2[0][0], box2[1][0]])
+    ax2_overlap = is_range_overlapping([box1[0][1], box1[1][1]],  [box2[0][1], box2[1][1]])
+    return ax1_overlap and ax2_overlap 
+
+
+
+def draw_labeled_bboxes(img, labels, previous_bboxes = []):
     valid_bboxes = []
     # Iterate through all detected cars
     for car_number in range(1, labels[1]+1):
@@ -289,10 +303,14 @@ def draw_labeled_bboxes(img, labels):
         # Define a bounding box based on min/max x and y
         delta_x = np.max(nonzerox) - np.min(nonzerox)
         delta_y = np.max(nonzeroy) - np.min(nonzeroy)
+        bbox = ((np.min(nonzerox), np.min(nonzeroy)), (np.max(nonzerox), np.max(nonzeroy)))
+        overlaps_with_existing = False
+        for b in previous_bboxes:
+            if are_boxes_overlapping(bbox, b):
+                overlaps_with_existing= True
 
-        if (delta_y * 1.2) < delta_x and delta_x > 50 and delta_y > 30 and np.min(nonzerox) > 300:
+        if overlaps_with_existing or (delta_y * 1.5) < delta_x and delta_x > 50 and delta_y > 30 and np.min(nonzerox) > 300:
             #print(delta_x, delta_y)
-            bbox = ((np.min(nonzerox), np.min(nonzeroy)), (np.max(nonzerox), np.max(nonzeroy)))
             cv2.rectangle(img, bbox[0], bbox[1], (0,255,0), 6)
             valid_bboxes.append(bbox)
     # Return the image
