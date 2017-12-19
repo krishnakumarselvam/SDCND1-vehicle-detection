@@ -1,11 +1,6 @@
 # Vehicle Detection
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-# UPDATES to the project
-(The version below largely gets rid of false negatives)
-I'm working on another version (to be out before 7 am, dec 19) which is smoother
-Thanks !
-
 
 The Project
 

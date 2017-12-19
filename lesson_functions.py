@@ -309,7 +309,7 @@ def draw_labeled_bboxes(img, labels, previous_bboxes = []):
             if are_boxes_overlapping(bbox, b):
                 overlaps_with_existing= True
 
-        if overlaps_with_existing or (delta_y * 1.5) < delta_x and delta_x > 50 and delta_y > 30 and np.min(nonzerox) > 300:
+        if (delta_y * 1.5) < delta_x and delta_x > 50 and delta_y > 30 and np.min(nonzerox) > 300:
             #print(delta_x, delta_y)
             cv2.rectangle(img, bbox[0], bbox[1], (0,255,0), 6)
             valid_bboxes.append(bbox)
