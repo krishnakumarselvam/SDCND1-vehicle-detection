@@ -1,9 +1,17 @@
 # Vehicle Detection
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
+
+# PLEASE CHECK BACK AFTER 2 AM on December 19, PST
+
+### I am responding to a review and had to "submit" in the classroom website since midnight is the deadline for submission. My pipeline is running and should be done by 2 AM.
+
+Thanks !
+
+
 The Project
 
-[Video output](https://youtu.be/EtS9RD13cXU)
+[Video output]()
 
 ---
 
@@ -18,7 +26,7 @@ The goals / steps of this project are the following:
 Files submitted
 --
 * [write_up.md](write_up.md)
-* [Video output](https://youtu.be/EtS9RD13cXU)
+* [Video output]()
 * [part_0_augment_dataset.ipynb](part_0_augment_dataset.ipynb)
 * [part_1_building_the_classifier.ipynb](part_1_building_the_classifier.ipynb)
 * [part_2_video_processing.ipynb](part_2_video_processing.ipynb)
