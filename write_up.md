@@ -5,7 +5,7 @@
 
 **Vehicle Detection Project**
 
-[Video output](https://youtu.be/EtS9RD13cXU)
+[Video output]()
 
 The goals / steps of this project are the following:
 
@@ -119,7 +119,7 @@ And finally, the bounding box !
 
 #### 1. Provide a link to your final video output. 
 
-Here's a [link to my video result](https://youtu.be/EtS9RD13cXU)
+Here's a [link to my video result]()
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.

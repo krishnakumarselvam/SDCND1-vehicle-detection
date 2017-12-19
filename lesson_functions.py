@@ -164,7 +164,7 @@ def convert_color(img, conv='RGB2YCrCb'):
         return cv2.cvtColor(img, cv2.COLOR_RGB2LUV)
 
 # Function to score models fast at runtime
-def find_cars(img, predictor, scale, overlap):
+def find_cars(img, predictor, scale, overlap, ystart=400, ystop=650, xstart=0, xstop=1280):
     ystart = 400
     ystop = 650
     orient = predictor.config['orient']
