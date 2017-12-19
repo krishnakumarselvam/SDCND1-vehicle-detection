@@ -144,4 +144,15 @@ Here are the techniques I used to remove false positives as well as to smooth th
 
 * Fast processing of the video was also an issue. While I got around it by processing 1 in 3 frames without losing accuracy, some sort of multithreaded implementation will be useful to process videos in realtime
 
-* I'd love to build an ensemble of predictors using classical techniques (like we saw in this project) as well as YOLO - type models
+* I'd love to build an ensemble of predictors using classical techniques (like we saw in this project) as well as YOLO - type models. This will enable it to be more robust
+
+* We could capture footage from multiple cameras and then use that to predict vehicles. This will increase our accuracy since we're effectively ensembling models
+
+* In case we have lidar / radar data available, combining with that data source would be very useful in predicting the vehicles (esp. the 3D space they occupy)
+
+
+
+
+
+
+
