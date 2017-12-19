@@ -126,7 +126,7 @@ Here's a [link to my video result](https://youtu.be/EtS9RD13cXU)
 
 Here are the techniques I used to remove false positives as well as to smooth the bounding boxes while processing the video
 
-* Ignore really tiny / weirdly proportioned bounding boxes. (`draw_labeled_bboxes` method in `lesson_functions.py`)
+* Ignore really tiny / weirdly proportioned bounding boxes. (`draw_labeled_bboxes` method in `lesson_functions.py`). I also ignored detections to the left as they were coming from partially obscured vehicles in the opposite lane.
 
 * Add additional weight to bounding boxes found near previously identified bounding boxes
 
